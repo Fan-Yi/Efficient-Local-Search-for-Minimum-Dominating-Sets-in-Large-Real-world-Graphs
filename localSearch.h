@@ -765,7 +765,7 @@ cout << 2.1 << endl;
 				int n = nbs[i];
 				if(!confChange[n]) continue;
 	//cout << "considering " << n << endl;
-				if(score[n] > score[best_add_v] || (score[n] == score[best_add_v] && time_stamp[n] < score[best_add_v]))
+				if(score[n] > score[best_add_v] || (score[n] == score[best_add_v] && time_stamp[n] < time_stamp[best_add_v]))
 					best_add_v = n;
 			}
 		}
@@ -792,7 +792,7 @@ cout << 2.2 << endl;
 				if(!confChange[n]) continue;
 //cout << 2.24 << endl;
 	//cout << "considering " << n << endl;
-				if(score[n] > score[best_add_v] || (score[n] == score[best_add_v] && time_stamp[n] < score[best_add_v]))
+				if(score[n] > score[best_add_v] || (score[n] == score[best_add_v] && time_stamp[n] < time_stamp[best_add_v]))
 					best_add_v = n;
 			}
 		}
